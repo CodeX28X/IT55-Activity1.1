@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Webpage</title>
+	<meta charset="UTF-8">
+	<meta name="discription" content="This is my first HTML page.">
+	<meta name="keywords" content="HTML, beginner, web development">
+	<meta name="author" content="Stephen Joseph D. Rubin">
+	<style>
+		body { font-family: Roboto, sans-serif; background-color: #DFE0E2; margin: 20px; color: #071013; }
+		h1 {background-color: #23B5D3;}
+		h1, h2, h3 { text-align: center; margin-bottom: 10px; color: #071013; }
+		p { line-height: 1.6; font-size: 16px; color: #071013; }
+
+		a { color: #23B5D3; text-decoration: none; }
+		a:hover { color: #071013; }
+
+		ul, ol { display: table; margin: 0 auto; text-align: left; }
+		table { border-collapse: collapse; margin: 20px auto; background: #fff; }
+		th, td { border: 1px solid #A2AEBB; padding: 10px 15px; text-align: center; }
+		th { background-color: #75ABBC; color: #fff; }
+
+		form { width: 300px; margin: 20px auto; padding: 15px; border: 1px solid #A2AEBB; background: #fff; border-radius: 8px; }
+		input, textarea { width: 100%; padding: 2px; margin: 5px 0; border: 1px solid #A2AEBB; border-radius: 4px; }
+		input[type="submit"] { background: #23B5D3; color: #fff; border: none; cursor: pointer; font-weight: bold; }
+		input[type="submit"]:hover { background: #071013; }
+
+		audio, video, img { display: block; margin: 15px auto; border-radius: 5px; } 
+
+		.highlight { background-color: #75ABBC; } 
+    }
+	</style>
+	<script>
+		function greet() {
+			alert("Hello! Welcome to my page.");
+		}
+	</script>
+</head>
+<body onload="greet()">
+<center>
+
+<!-- HEADER -->
+	<h1>Welcome to My First Webpage</h1>
+	<p>Web development is <b>important</b> and <i>enjoyable</i>.</p>
+	<p class="highlight"> Have Fun and Enjoy!.</p>
+
+<!-- CONTENT -->
+	<h2> My Favorite Fruits </h2>
+	<ul>
+		<li>Apple</li>
+		<li>Rambutan</li>
+		<li>Mango</li>
+	</ul>
+
+	<h2>Steps to Make Pancit Canton</h2>
+	<ol>
+		<li>Boil water</li>
+		<li>Add Noodles and Boil for 2 minutes</li>
+		<li>Drain Water</li>
+		<li>Add seasonings</li>
+	</ol>
+	
+<!-- WITH EMBEDDED FILES -->
+	<p> Visit <a href="https://www.facebook.com/ghouter.milly/" target="_blank">My 	Facebook Profile</a> for more info.</p>
+
+	<h2>My Favorite Song</h2>
+	<audio controls>		
+ 		<source src="Paramore - Still into You  Lyrics.mp3" type="audio/mpeg">
+ 		Your browser does not support the audio element.
+ 	</audio>
+ 		<h2>My Favorite Movie Scene</h2>
+ 	<video width="640" height="480" controls>
+ 		<source src="Real Steel - Dakota Goyo Dance Scene Two.mp4" type="video/mp4">
+ 		Your browser does not support the video tag.
+ 	</video>
+
+ 	<h2>My Favorite Picture</h2>
+ 	<img src="images.jpg" alt="A beautiful view" width="480">
+
+	<div style="border:1px solid #000; padding:10px; margin-top:10px;">
+    		<h3>About Web Elements</h3>
+    		<p>This is a block container using <span style="color:red;">div</span> and 
+       			<span style="font-weight:bold;">span</span> elements.</p>
+    		<ul>
+        		<li><span style="color:blue;">Div</span> groups block elements.</li>
+        		<li><span style="color:green;">Span</span> styles inline text.</li>
+    		</ul>
+	</div>
+
+<!-- CLASS SCHEDULE -->
+	<h2>Class Schedule</h2>
+ 	<table border="3" cellpadding="8">
+ 		<tr>
+ 			<th>Day</th>
+ 			<th>Subject</th>
+			<th>Time</th>
+ 		</tr>
+ 		<tr>
+ 			<td rowspan =4>Monday</td>
+ 			<td>Websystems and Tecnologies 1</td>
+			<td>10:00 AM - 11:00 AM</td>		
+ 		</tr>
+ 		<tr>
+			<td>Environmental Science</td>
+			<td>12:00 AM - 1:00 PM</td>	
+ 		</tr>
+ 		<tr>
+			<td>Computer Programming 3 Lab</td>
+			<td>1:00 PM - 4:00 PM</td>	
+ 		</tr>
+ 		<tr>
+			<td>Data Structures and Algorithm</td>
+			<td>4:00 PM - 6:00 PM</td>	
+ 		</tr>
+		<tr>
+		<td rowspan = 4>Tuesday</td>
+ 			<td>Science Technology and Society</td>
+			<td>7:00 AM - 8:30 AM</td>		
+ 		</tr>
+ 		<tr>
+			<td>Fundamentals of Networking</td>
+			<td>9:00 AM - 10:00 AM</td>	
+ 		</tr>
+ 		<tr>
+			<td>Computer Programming 3 </td>
+			<td>10:00 AM - 12:00 PM</td>	
+ 		</tr>
+ 		<tr>
+			<td>Computer Architecture</td>
+			<td>4:00 PM - 6:00 PM</td>	
+ 		</tr>
+		<td rowspan = 5>Wednesday</td>
+ 			<td>PATH-Fit 3</td>
+			<td>7:00 AM - 9:00 AM</td>		
+ 		</tr>
+ 		<tr>
+			<td>Websystems and Tecnologies 1</td>
+			<td>10:00 AM - 11:00 PM</td>	
+ 		</tr>
+ 		<tr>
+			<td>Environmental Science </td>
+			<td>12:00 AM - 1:00 PM</td>	
+ 		</tr>
+ 		<tr>
+			<td>Fundamentals of Networking Lab</td>
+			<td>1:00 PM - 4:00 PM</td>	
+ 		</tr>
+ 		<tr>
+			<td>Computer Architecture Lab</td>
+			<td>4:00 PM - 7:00 PM</td>	
+ 		</tr>
+		<td rowspan = 3>Thursday</td>
+ 			<td>Science Technology and Society</td>
+			<td>7:00 AM - 8:30 AM</td>		
+ 		</tr>
+ 		<tr>
+			<td>Fundamentals of Networking</td>
+			<td>9:00 AM - 10:00 PM</td>	
+ 		</tr>
+ 		<tr>
+			<td>Web Systems and Technologies Lab </td>
+			<td>1:00 PM - 4:00 PM</td>	
+ 		</tr>
+		<td rowspan = 2>Friday</td>
+ 			<td>Data Structures and Algorithm Lab</td>
+			<td>7:00 AM - 10:00 AM</td>		
+ 		</tr>
+ 		<tr>
+			<td>Environmental Science</td>
+			<td>12:00 PM - 1:00 PM</td>	
+ 		</tr>
+ 	</table>
+
+<!-- FORMS -->
+	<h2>Contact Me</h2>
+ 	<form>
+ 		<label for="name">Name:</label>
+ 		<input type="text" id="name" name="name"><br><br>
+ 		
+		<label for="email">Email:</label>
+ 		<input type="email" id="email" name="email"><br><br>
+ 		
+		<label for="message">Message:</label><br>
+ 		<textarea id="message" name="message"></textarea><br><br>
+ 
+		<input type="submit" value="Send">
+ 	</form>
+
+</body>
+</html>
+
